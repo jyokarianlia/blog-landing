@@ -1,0 +1,145 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+body .sec1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(to bottom, #ff8f70, #ff3d54);
+  height: 25em;
+}
+
+body .sec1 .bar-movil {
+  width: 84%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 8%;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 2em;
+}
+
+body .sec1 .bar-movil .img-logo {
+  width: 4.5em;
+}
+
+body .sec1 .bar-movil #menu-act:hover {
+  cursor: pointer;
+}
+
+body .sec1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body .sec1 .menu-oculto, body .sec1 .menu-principal {
+  background-color: white;
+  position: absolute;
+  top: 5em;
+  font-size: .9em;
+  border-radius: 5px;
+  width: 60%;
+  left: 20%;
+  text-align: center;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: opacity ease .4s;
+  transition: opacity ease .4s;
+}
+
+body .sec1 .menu-oculto li, body .sec1 .menu-principal li {
+  padding: .6em;
+}
+
+body .sec1 .menu-oculto li:hover, body .sec1 .menu-principal li:hover {
+  cursor: pointer;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+body .sec1 .menu-oculto .ocultarProductos, body .sec1 .menu-oculto .ocultarCompany, body .sec1 .menu-oculto .ocultarConnec, body .sec1 .menu-principal .ocultarProductos, body .sec1 .menu-principal .ocultarCompany, body .sec1 .menu-principal .ocultarConnec {
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+body .sec1 .menu-oculto .verProductos, body .sec1 .menu-oculto .verCompany, body .sec1 .menu-oculto .verConnec, body .sec1 .menu-principal .verProductos, body .sec1 .menu-principal .verCompany, body .sec1 .menu-principal .verConnec {
+  background-color: rgba(200, 200, 203, 0.3);
+  border-radius: 5px;
+  margin: 1em 1em 0 1em;
+  padding: .5em 0;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+body .sec1 .menu-oculto .verProductos, body .sec1 .menu-principal .verProductos {
+  height: 12em;
+}
+
+body .sec1 .menu-oculto .verCompany, body .sec1 .menu-principal .verCompany {
+  height: 9.5em;
+}
+
+body .sec1 .menu-oculto .verConnec, body .sec1 .menu-principal .verConnec {
+  height: 7em;
+}
+
+body .sec1 .menu-oculto .hr, body .sec1 .menu-principal .hr {
+  height: 1px;
+  width: 80%;
+  margin: .5em 10%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body .sec1 .menu-oculto .botones .btn-login, body .sec1 .menu-oculto .botones .btn-singup, body .sec1 .menu-principal .botones .btn-login, body .sec1 .menu-principal .botones .btn-singup {
+  display: block;
+  margin: 1em auto;
+}
+
+body .sec1 .menu-oculto .botones .btn-login:hover, body .sec1 .menu-oculto .botones .btn-singup:hover, body .sec1 .menu-principal .botones .btn-login:hover, body .sec1 .menu-principal .botones .btn-singup:hover {
+  cursor: pointer;
+}
+
+body .sec1 .menu-oculto .botones .btn-singup, body .sec1 .menu-principal .botones .btn-singup {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  width: 40%;
+  border-radius: 3em;
+  color: white;
+  padding: .7em 1em;
+}
+
+body .sec1 .menu-principal {
+  opacity: 1;
+  -webkit-transition: opacity ease .4s;
+  transition: opacity ease .4s;
+}
+
+body .sec1 .info1 {
+  padding: 8em 0;
+  text-align: center;
+  color: white;
+}
+
+body .sec1 .info1 h1 {
+  font-size: 1.8em;
+  margin: 0px .7em 1em .7em;
+}
+
+body .sec1 .info1 p {
+  padding: 0px 1.3em;
+}
+
+body .sec1 .info1 div {
+  margin-top: 1em;
+}
+/*# sourceMappingURL=style.css.map */

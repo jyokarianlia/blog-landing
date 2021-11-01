@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | [Blogr]</title>
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,36 +15,77 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  Product
+<body id="app">
+  <!-- Primer secmento -->
+  <main class="sec1">
+    <header>
+      <div class="bar-movil">
+        <img src="images/logo.svg" alt="logo" class="img-logo">
+        <img src="images/icon-hamburger.svg" alt="men-hamburguer" @click="vermenu" id="menu-act">
+      </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+      <div class="menu-oculto" :class="clasemenu">
+        <ul>
+          <li @click="verSubmenu('verProductos')">Product
+            <ul class="ocultarProductos" :class="verProductos">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </li>
+          <li @click="verSubmenu('verCompany')">Company
+            <ul class="ocultarCompany" :class="verCompany">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </li>
+          <li @click="verSubmenu('verConnec')">Connect
+            <ul class="ocultarConnec" :class="verConnec">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </li>
+        </ul>
 
-  Company
+        <div class="hr"></div>
 
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
+        <div class="botones">
+          <label class="btn-login">Login</label>
+          <label class="btn-singup">Sing Up</label>
+        </div>
+      </div>
+    </header>
+    <div class="info1">
+      <h1>A modern publishing platform</h1>
+      <p> Grow your audience and build your online brand</p>
+      <div>
+        <label>Start for Free</label>
+        <label>Learn More</label>
+      </div>
+    </div>
+  </main>
   
-  Login
-  Sign Up
+  <!-- Segundo secmento -->
+  <div></div>
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+  <!-- Tercer secmento -->
+  <div></div>
 
-  Start for Free
-  Learn More
+  <!-- Cuarto secmento -->
+  <div></div>
+
+  <!-- Quinto secmento -->
+  <div></div>
+
+  
+
+  
+  
 
   Designed for the future
 
@@ -95,5 +137,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="js/vue.js"></script>
 </body>
 </html>
