@@ -10,22 +10,27 @@ $Lightred2: hsl(353, 100%, 62%);
 $Verydarkgrayblue: hsl(237, 17%, 21%);
 $Verydarkdesaturatedblue: hsl(237, 23%, 32%);
 
+$overpass: 'Overpass', sans-serif; //300 , 600
+$ubuntu: 'Ubuntu', sans-serif; // 400 , 500 , 700
+
 body {
     padding: 0;
     margin: 0;
     font-size: 16px;
     .sec1 {
+        font-family: $ubuntu;
         background: linear-gradient($Verylightred2, $Lightred2);
-        height: 33em;
+        height: 34em;
         border-radius: 0 0 0 20%;
         position: relative;
         overflow: hidden;
         z-index: 1;
+        margin-bottom: 6em;
         .img-fondo-sec1{
             position: absolute;
-            top: -60%;
-            left: -90%;
-            width: 360%;
+            top: -43%;
+            left: -80%;
+            width: 330%;
             z-index: 1;
         }
         .bar-movil {
@@ -125,15 +130,18 @@ body {
         .info1 {
             position: relative;
             z-index: 4;
-            padding: 8em 0;
+            padding: 10em 0;
             text-align: center;
             color: $White;
+            font-family: $overpass;
             h1 {
                 font-size: 1.8em;
-                margin: 0px .7em 1em .7em;
+                margin: 0px .7em .7em .7em;
+                padding: 0 1.4em;
+                font-weight: 600;
             }
             p {
-                padding: 0px 1.3em;
+                padding: 0px 2.7em;
             }
             div {
                 margin-top: 3em;
@@ -150,6 +158,29 @@ body {
                     background-color: $White;
                     color: $ligth-red;
                 }
+            }
+        }
+    }
+    .sec2 {
+        text-align: center;
+        font-family: $overpass;
+        .img-circles{
+            width: 100%;
+            margin-top: 1em;
+        }
+        .title{
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+        .cont-info{
+            padding: 0 1.9em;
+            line-height: 2em;
+            .title{
+                padding: 2em 1.5em 0 1.5em;
+            }
+            .text{
+                font-weight: 300;
+                padding: 0 .7em;
             }
         }
     }

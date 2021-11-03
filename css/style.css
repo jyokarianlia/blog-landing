@@ -5,20 +5,22 @@ body {
 }
 
 body .sec1 {
+  font-family: "Ubuntu", sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
   background: linear-gradient(#ff8f70, #ff3d54);
-  height: 33em;
+  height: 34em;
   border-radius: 0 0 0 20%;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin-bottom: 6em;
 }
 
 body .sec1 .img-fondo-sec1 {
   position: absolute;
-  top: -60%;
-  left: -90%;
-  width: 360%;
+  top: -43%;
+  left: -80%;
+  width: 330%;
   z-index: 1;
 }
 
@@ -143,18 +145,21 @@ body .sec1 .menu-principal {
 body .sec1 .info1 {
   position: relative;
   z-index: 4;
-  padding: 8em 0;
+  padding: 10em 0;
   text-align: center;
   color: white;
+  font-family: "Overpass", sans-serif;
 }
 
 body .sec1 .info1 h1 {
   font-size: 1.8em;
-  margin: 0px .7em 1em .7em;
+  margin: 0px .7em .7em .7em;
+  padding: 0 1.4em;
+  font-weight: 600;
 }
 
 body .sec1 .info1 p {
-  padding: 0px 1.3em;
+  padding: 0px 2.7em;
 }
 
 body .sec1 .info1 div {
@@ -177,5 +182,34 @@ body .sec1 .info1 div label {
 body .sec1 .info1 div .btn-start {
   background-color: white;
   color: #ff525d;
+}
+
+body .sec2 {
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+}
+
+body .sec2 .img-circles {
+  width: 100%;
+  margin-top: 1em;
+}
+
+body .sec2 .title {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+body .sec2 .cont-info {
+  padding: 0 1.9em;
+  line-height: 2em;
+}
+
+body .sec2 .cont-info .title {
+  padding: 2em 1.5em 0 1.5em;
+}
+
+body .sec2 .cont-info .text {
+  font-weight: 300;
+  padding: 0 .7em;
 }
 /*# sourceMappingURL=style.css.map */
