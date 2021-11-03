@@ -149,8 +149,8 @@ body {
                 justify-content: space-around;
                 label {
                     border-radius: 25px;
-                    padding: .6em .3em;
-                    width: 9em;
+                    padding: .6em 0em;
+                    width: 7.5em;
                     border: 1px solid $White;
                     font-weight: 600;
                 }
@@ -181,6 +181,48 @@ body {
             .text{
                 font-weight: 300;
                 padding: 0 .7em;
+            }
+        }
+    }
+    .sec3{
+        margin-top: 18em;
+        position: relative;
+        text-align: center;
+        .phone{
+            position: absolute;
+            z-index: 3;
+            left: 0;
+            top: -11.5em;
+            width: 100%;
+        }
+        .cont-sec3{
+            overflow: hidden;
+            background-color: $very-dark-blue;
+            border-radius: 0 7em 0 7em;
+            position: relative;
+            .patter-circles{
+                position: absolute;
+                top: -15em;
+                left: -30%;
+                z-index: 2;
+                width: 160%;
+            }
+            .cont-info-sec3{
+                margin-top: 14em;
+                margin-bottom: 7em;
+                font-family: $overpass;
+                position: relative;
+                z-index: 5;
+                .title{
+                    color: $White;
+                    font-size: 2em;
+                    font-weight: 600;
+                }
+                .text{
+                    color: $Grayishblue;
+                    padding: 0 2em;
+                    line-height: 2em;
+                }
             }
         }
     }

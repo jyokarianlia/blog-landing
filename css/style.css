@@ -173,8 +173,8 @@ body .sec1 .info1 div {
 
 body .sec1 .info1 div label {
   border-radius: 25px;
-  padding: .6em .3em;
-  width: 9em;
+  padding: .6em 0em;
+  width: 7.5em;
   border: 1px solid white;
   font-weight: 600;
 }
@@ -211,5 +211,54 @@ body .sec2 .cont-info .title {
 body .sec2 .cont-info .text {
   font-weight: 300;
   padding: 0 .7em;
+}
+
+body .sec3 {
+  margin-top: 18em;
+  position: relative;
+  text-align: center;
+}
+
+body .sec3 .phone {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: -11.5em;
+  width: 100%;
+}
+
+body .sec3 .cont-sec3 {
+  overflow: hidden;
+  background-color: #1f3f5b;
+  border-radius: 0 7em 0 7em;
+  position: relative;
+}
+
+body .sec3 .cont-sec3 .patter-circles {
+  position: absolute;
+  top: -15em;
+  left: -30%;
+  z-index: 2;
+  width: 160%;
+}
+
+body .sec3 .cont-sec3 .cont-info-sec3 {
+  margin-top: 14em;
+  margin-bottom: 7em;
+  font-family: "Overpass", sans-serif;
+  position: relative;
+  z-index: 5;
+}
+
+body .sec3 .cont-sec3 .cont-info-sec3 .title {
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+body .sec3 .cont-sec3 .cont-info-sec3 .text {
+  color: #c8c8cb;
+  padding: 0 2em;
+  line-height: 2em;
 }
 /*# sourceMappingURL=style.css.map */
