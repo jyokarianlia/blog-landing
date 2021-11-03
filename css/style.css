@@ -6,8 +6,20 @@ body {
 
 body .sec1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
-  background: linear-gradient(to bottom, #ff8f70, #ff3d54);
-  height: 25em;
+  background: linear-gradient(#ff8f70, #ff3d54);
+  height: 33em;
+  border-radius: 0 0 0 20%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+body .sec1 .img-fondo-sec1 {
+  position: absolute;
+  top: -60%;
+  left: -90%;
+  width: 360%;
+  z-index: 1;
 }
 
 body .sec1 .bar-movil {
@@ -17,6 +29,7 @@ body .sec1 .bar-movil {
   display: flex;
   margin-left: 8%;
   position: relative;
+  z-index: 5;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -41,6 +54,8 @@ body .sec1 ul {
 }
 
 body .sec1 .menu-oculto, body .sec1 .menu-principal {
+  position: relative;
+  z-index: 3;
   background-color: white;
   position: absolute;
   top: 5em;
@@ -122,9 +137,12 @@ body .sec1 .menu-principal {
   opacity: 1;
   -webkit-transition: opacity ease .4s;
   transition: opacity ease .4s;
+  z-index: 5;
 }
 
 body .sec1 .info1 {
+  position: relative;
+  z-index: 4;
   padding: 8em 0;
   text-align: center;
   color: white;
@@ -140,6 +158,24 @@ body .sec1 .info1 p {
 }
 
 body .sec1 .info1 div {
-  margin-top: 1em;
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .sec1 .info1 div label {
+  border-radius: 25px;
+  padding: .6em .3em;
+  width: 9em;
+  border: 1px solid white;
+  font-weight: 600;
+}
+
+body .sec1 .info1 div .btn-start {
+  background-color: white;
+  color: #ff525d;
 }
 /*# sourceMappingURL=style.css.map */
